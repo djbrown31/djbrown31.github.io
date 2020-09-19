@@ -92,7 +92,6 @@ function getRandomNumber() {
 function saveGuessHistory(guess) {
     // *CODE GOES BELOW HERE *
     guesses.push(guess);
-    console.log(guesses);
 }
 
 /**
