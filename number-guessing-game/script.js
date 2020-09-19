@@ -12,10 +12,10 @@
  */
 
 // Variable to store the list of guesses 
-let guesses = [];
+let guesses;
 
 // Variable for store the correct random number 
-let correctNumber = getRandomNumber();
+let correctNumber;
 
 
 window.onload = function () {
@@ -29,10 +29,10 @@ window.onload = function () {
 function playGame() {
     // *CODE GOES BELOW HERE *
     let numberGuess = document.getElementById('number-guess').value;
-    displayResult(numberGuess);
     saveGuessHistory(numberGuess);
     displayHistory();
-};
+    displayResult(numberGuess);
+}
 
 /**
  * Show the result for if the guess it too high, too low, or correct
