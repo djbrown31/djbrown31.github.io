@@ -10,7 +10,14 @@ let correctNumber;
 window.onload = function () {
     initGame()
     document.getElementById("number-submit").addEventListener("click", playGame);
-    document.getElementById("restart-game").addEventListener("click", initGame)
+    document.getElementById("restart-game").addEventListener("click", initGame);
+    // domEvents();
+
+    // function domEvents() {
+    //     for (let i = 0; i < document.body.children.length; i++) {
+    //         alert(document.body.children[i].innerText);
+    //     }
+    // }
 }
 
 function playGame() {
